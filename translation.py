@@ -1,26 +1,25 @@
 from config import Config
 
 class Translation(object):
-      START = str(Config.START) + "\n\nFor source code [press me](https://github.com/Ns-AnoNymouS/feedbackbot)"
+      START = str(Config.START) + "\n\nSource Code [Tekan disini](https://github.com/HariyonoRizki2/feedbackbot)"
 
       RULES = Config.RULES
 
-      LOGIN = """Only for admins for receiving feedbacks"""
+      LOGIN = """AKSES TERBATAS! HANYA UNTUK ADMIN"""
 
 
-      ABOUT = """**MY DETAILS:**
+      ABOUT = """**TENTANG SAYA:**
 
-```🤖My Name:``` [Feedback Ns Bot](https://t.me/Feedback_Nsbot)
+```🤖Namaku:``` [FBC - CUSTOMER SERVICE](https://t.me/csfbc_bot)
     
 ```📝 Language:``` [Python 3](https://www.python.org/)
 
 ```🧰 Framework:``` [Pyrogram](https://github.com/pyrogram/pyrogram)
 
-```👨🏻‍💻 Developer:``` [𝐀𝐧𝐨𝐧𝐲𝐦𝐨𝐮𝐬](https://t.me/Ns_AnoNymouS)
+```👨🏻‍💻 Developer:``` [Kevin Arifandi](https://t.me/KepinnnAripp)
                
-```📢 Channel:``` [NS BOT UPDATES](https://t.me/Ns_bot_updates)
+```📢 Channel:``` [KITGBOTZ](https://t.me/kitgbotz)
 
-```👥 Group:``` [Ns BOT SUPPORT](https://t.me/Ns_Bot_supporters)
+```👥 Group:``` [CHAT KITGBOTZ](https://t.me/kitgbotzchat)
 
-Inspired By @stemlime_bot
 """
