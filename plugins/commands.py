@@ -17,14 +17,14 @@ async def text(c, m):
             await m.reply_text(text="From now you will receive feedbacks. Untill this bot restart.  If you want to get feedbacks permanently add your id in config vars")
          if m.text != Config.PASS:
             Config.LOGIN.remove(m.from_user.id)
-            await m.reply_text(text="**Incorrect Password ⚠️**", parse_mode="markdown")
+            await m.reply_text(text="**PASSWORD SALAH ⚠️**", parse_mode="markdown")
       if m.from_user.id in Config.feedback:
          button = [[
-                   InlineKeyboardButton("Yes", callback_data="yes"),
-                   InlineKeyboardButton("No", callback_data="cancel")
+                   InlineKeyboardButton("Ya", callback_data="yes"),
+                   InlineKeyboardButton("Tidak", callback_data="cancel")
                   ]]
          markup = InlineKeyboardMarkup(button)
-         await m.reply_text(text="Are you sure to send this feedback",
+         await m.reply_text(text="Apakah Kamu Telah Yakin untuk Mengirimkan Umpan Balik Ini?",
                             reply_markup=markup,
                             quote=True)
       try:
@@ -39,11 +39,11 @@ async def text(c, m):
 @feedback.on_message(filters.command(["start"]))
 async def start(c, m):
       button = [[
-                InlineKeyboardButton("Feedback", callback_data="feedback"),
-                InlineKeyboardButton("Rules", callback_data="rules"),
+                InlineKeyboardButton("Umpan Balik", callback_data="feedback"),
+                InlineKeyboardButton("Peraturan", callback_data="rules"),
                 ],
                 [
-                InlineKeyboardButton("About", callback_data="about"),
+                InlineKeyboardButton("Tentang", callback_data="about"),
                 InlineKeyboardButton("Login", callback_data="login"),
                ]]
       markup = InlineKeyboardMarkup(button)
